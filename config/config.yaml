@@ -1,0 +1,50 @@
+# Memory Agent Regulatory — Default Configuration
+# Override individual values via environment variables (see .env.example).
+
+embeddings:
+  model: "BAAI/bge-m3"
+  batch_size: 32
+  dimensions: 1024
+
+chunking:
+  chunk_size: 500        # tokens per chunk
+  chunk_overlap: 50      # overlapping tokens between consecutive chunks
+
+retrieval:
+  top_k: 10             # over-retrieve for reranking (reranker trims to top_n)
+  collection: "RegulatoryChunks"
+  min_similarity: 0.35  # minimum cosine similarity (vector strategy only)
+  search_strategy: "hybrid"  # "vector" | "keyword" | "hybrid"
+  hybrid:
+    alpha: 0.5           # 0.0 = pure BM25, 1.0 = pure vector
+    fusion_type: "ranked" # "ranked" (RRF) or "relative_score"
+
+reranking:
+  enabled: true
+  model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  top_n: 5              # final number of chunks after reranking
+
+llm:
+  model: "llama3.2:3b"
+  temperature: 0
+  top_p: 1.0
+  num_ctx: 4096            # KV cache window — must be >= max_context_tokens + prompt overhead
+  num_predict: 1024        # max response tokens
+
+rag:
+  max_context_tokens: 4096
+
+weaviate:
+  host: "localhost"
+  port: 8080
+
+ollama:
+  host: "http://localhost:11434"
+
+phoenix:
+  host: "localhost"
+  port: 6006
+
+logging:
+  level: "INFO"
+  format: "text"              # "text" (human-readable) or "json" (structured)
