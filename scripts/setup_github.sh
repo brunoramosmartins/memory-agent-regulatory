@@ -91,25 +91,16 @@ gh api repos/$REPO/milestones --method POST \
 echo "Milestones created."
 
 # --------------------------------------------------------------------------
-# Helper: get milestone number by title
+# Milestone titles (gh issue create --milestone expects the TITLE, not number)
 # --------------------------------------------------------------------------
-get_milestone() {
-  gh api repos/$REPO/milestones --paginate -q ".[] | select(.title == \"$1\") | .number"
-}
-
-echo ""
-echo "--- Fetching milestone numbers ---"
-M0=$(get_milestone "Phase 0 — Baseline RAG Hardening")
-M1=$(get_milestone "Phase 1 — Memory Layer")
-M2=$(get_milestone "Phase 2 — Memory Manager")
-M3=$(get_milestone "Phase 3 — Agent Loop")
-M4=$(get_milestone "Phase 4 — Multi-Source Ingestion")
-M5=$(get_milestone "Phase 5 — Simulation Engine")
-M6=$(get_milestone "Phase 6 — Evaluation Engine")
-M7=$(get_milestone "Phase 7 — Productization")
-
-echo "  Phase 0: #$M0 | Phase 1: #$M1 | Phase 2: #$M2 | Phase 3: #$M3"
-echo "  Phase 4: #$M4 | Phase 5: #$M5 | Phase 6: #$M6 | Phase 7: #$M7"
+M0="Phase 0 — Baseline RAG Hardening"
+M1="Phase 1 — Memory Layer"
+M2="Phase 2 — Memory Manager"
+M3="Phase 3 — Agent Loop"
+M4="Phase 4 — Multi-Source Ingestion"
+M5="Phase 5 — Simulation Engine"
+M6="Phase 6 — Evaluation Engine"
+M7="Phase 7 — Productization"
 
 # --------------------------------------------------------------------------
 # 3. ISSUES
