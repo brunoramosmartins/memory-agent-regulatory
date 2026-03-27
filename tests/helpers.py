@@ -1,11 +1,17 @@
 """Shared test helpers for building Settings instances."""
 
+from sqlalchemy import Engine, create_engine
+from sqlalchemy.orm import Session, sessionmaker
+
 from src.config.settings import (
+    DatabaseSettings,
     HybridSettings,
+    MemorySettings,
     RerankingSettings,
     RetrievalSettings,
     Settings,
 )
+from src.memory.models import Base
 
 
 def make_test_settings(
@@ -38,5 +44,22 @@ def make_test_settings(
             model=reranking_model,
             top_n=reranking_top_n,
         ),
+        database=DatabaseSettings(host="localhost", password="test"),
+        memory=MemorySettings(),
         **kwargs,
     )
+
+
+def make_sqlite_engine() -> Engine:
+    """Create an in-memory SQLite engine with all tables."""
+    engine = create_engine("sqlite://", echo=False)
+    Base.metadata.create_all(engine)
+    return engine
+
+
+def make_test_session(engine: Engine | None = None) -> Session:
+    """Create a test SQLAlchemy session backed by SQLite."""
+    if engine is None:
+        engine = make_sqlite_engine()
+    factory = sessionmaker(bind=engine, expire_on_commit=False)
+    return factory()
