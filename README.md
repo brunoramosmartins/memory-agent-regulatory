@@ -23,30 +23,53 @@ A LangGraph state graph orchestrates retrieval, reasoning, tool use, and memory 
 
 ## Architecture
 
-```
-User / Simulator
-       │
-       ▼
-Streamlit Chat Interface
-       │
-       ▼
-Agent Orchestrator (LangGraph)
- ┌──────────┐  ┌────────┐  ┌───────────┐  ┌──────────────┐
- │ retrieve  │→ │ reason │→ │ tool_call │→ │ write_memory │
- │ _memory   │  │        │  │           │  │              │
- └──────────┘  └────────┘  └───────────┘  └──────────────┘
-       │            │            │               │
-       ▼            ▼            ▼               ▼
- Context Builder  LLM (Ollama)  Tool Router  Memory Write-back
- ┌─────────────┐
- │Conversational│ ← PostgreSQL
- │Semantic      │ ← Weaviate
- │Procedural    │ ← Weaviate
- │Summary       │ ← PostgreSQL
- └─────────────┘
+```mermaid
+flowchart TB
+    User([User / Simulator])
+    UI[Streamlit Chat Interface]
+    Agent[Agent Orchestrator — LangGraph]
 
-Observability: OpenTelemetry + Phoenix
-Infrastructure: Docker Compose (Weaviate + PostgreSQL + Ollama)
+    User --> UI --> Agent
+
+    subgraph Agent Loop
+        direction LR
+        Retrieve[Retrieve Memory] --> Reason[Reason — LLM]
+        Reason --> Tool{Tool needed?}
+        Tool -->|Yes| ToolCall[Tool Call] --> Reason
+        Tool -->|No| Write[Write Memory]
+    end
+
+    Agent --> Agent Loop
+
+    subgraph Memory Layer
+        direction TB
+        Conv[Conversational — PostgreSQL]
+        Sem[Semantic — Weaviate]
+        Proc[Procedural — Weaviate]
+        Summ[Summary — PostgreSQL]
+    end
+
+    subgraph Context Builder
+        direction TB
+        CB[Merge memory + retrieval into prompt]
+    end
+
+    Retrieve --> Memory Layer
+    Retrieve --> CB
+    Write --> Memory Layer
+
+    subgraph Infrastructure
+        direction LR
+        PG[(PostgreSQL)]
+        WV[(Weaviate)]
+        OL[Ollama — Llama]
+    end
+
+    Conv --- PG
+    Summ --- PG
+    Sem --- WV
+    Proc --- WV
+    Reason --- OL
 ```
 
 ## Tech Stack
@@ -77,6 +100,11 @@ memory-agent-regulatory/
 ├── src/
 │   ├── agent/              # LangGraph orchestration (Phase 3)
 │   ├── memory/             # Structured memory layer (Phase 1-2)
+│   │   ├── manager.py      # MemoryManager — unified read/write facade
+│   │   ├── conversational.py
+│   │   ├── semantic.py
+│   │   ├── procedural.py
+│   │   └── summary.py
 │   ├── ingestion/          # Multi-source document ingestion (Phase 4)
 │   ├── retrieval/          # Hybrid search + reranking
 │   ├── config/             # Pydantic Settings
@@ -99,8 +127,8 @@ memory-agent-regulatory/
 | Phase | Name | Status |
 |-------|------|--------|
 | 0 | Baseline RAG Hardening | Done |
-| 1 | Memory Layer | Planned |
-| 2 | Memory Manager | Planned |
+| 1 | Memory Layer | Done |
+| 2 | Memory Manager | Done |
 | 3 | Agent Loop | Planned |
 | 4 | Multi-Source Ingestion | Planned |
 | 5 | Simulation Engine | Planned |
