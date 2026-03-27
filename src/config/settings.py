@@ -73,6 +73,26 @@ class PhoenixSettings(BaseModel):
     port: int = 6006
 
 
+class DatabaseSettings(BaseModel):
+    host: str = "localhost"
+    port: int = 5432
+    user: str = "agent"
+    password: str = ""
+    name: str = "agent_memory"
+    echo: bool = False
+
+    @property
+    def url(self) -> str:
+        return f"postgresql+psycopg://{self.user}:{self.password}@{self.host}:{self.port}/{self.name}"
+
+
+class MemorySettings(BaseModel):
+    max_history_turns: int = 20
+    summary_threshold: int = 15
+    semantic_top_k: int = 5
+    procedural_top_k: int = 3
+
+
 class LoggingSettings(BaseModel):
     level: str = "INFO"
     format: Literal["text", "json"] = "text"
@@ -120,6 +140,8 @@ class Settings(BaseSettings):
     weaviate: WeaviateSettings = WeaviateSettings()
     ollama: OllamaSettings = OllamaSettings()
     phoenix: PhoenixSettings = PhoenixSettings()
+    database: DatabaseSettings = DatabaseSettings()
+    memory: MemorySettings = MemorySettings()
     logging: LoggingSettings = LoggingSettings()
 
     @classmethod

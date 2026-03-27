@@ -31,7 +31,7 @@ def validate_embedding(
         )
 
     for i, x in enumerate(vec):
-        if not isinstance(x, (int, float)):
+        if not isinstance(x, int | float):
             raise ValueError(
                 f"Embedding element at index {i} is not numeric: {type(x)}"
             )

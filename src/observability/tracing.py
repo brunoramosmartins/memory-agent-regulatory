@@ -37,7 +37,7 @@ def span_set_input(span: Any, value: Any) -> None:
     """Set span input. Uses Phoenix set_input when available, else input.value attribute."""
     if span is None or not span.is_recording():
         return
-    if isinstance(value, (dict, list)):
+    if isinstance(value, dict | list):
         value = json.dumps(value) if value else ""
     elif not isinstance(value, str):
         value = str(value)
@@ -56,7 +56,7 @@ def span_set_output(span: Any, value: Any) -> None:
     """Set span output. Uses Phoenix set_output when available, else output.value attribute."""
     if span is None or not span.is_recording():
         return
-    if isinstance(value, (dict, list)):
+    if isinstance(value, dict | list):
         value = json.dumps(value) if value else "{}"
     elif not isinstance(value, str):
         value = str(value)

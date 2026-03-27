@@ -45,6 +45,20 @@ phoenix:
   host: "localhost"
   port: 6006
 
+database:
+  host: "localhost"
+  port: 5432
+  user: "agent"
+  password: ""                   # set via POSTGRES_PASSWORD env var
+  name: "agent_memory"
+  echo: false
+
+memory:
+  max_history_turns: 20          # max turns returned by get_history
+  summary_threshold: 15          # turns before auto-summarization triggers
+  semantic_top_k: 5              # top-k results for semantic memory search
+  procedural_top_k: 3            # top-k results for procedural pattern search
+
 logging:
   level: "INFO"
   format: "text"              # "text" (human-readable) or "json" (structured)
