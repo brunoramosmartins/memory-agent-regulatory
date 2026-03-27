@@ -1,0 +1,629 @@
+{
+  "generated_at": "2026-03-27T14:17:07.743407+00:00",
+  "metadata": {
+    "total_sessions": 50,
+    "baseline_pipeline": "baseline",
+    "memory_pipeline": "memory"
+  },
+  "comparison": {
+    "consistency_score": {
+      "value": 0.9965,
+      "details": {
+        "per_topic": {
+          "pix_fees": 1.0,
+          "pix_deadlines": 0.9912917271407837,
+          "pix_compliance": 1.0,
+          "pix_comparisons": 0.989517819706499,
+          "cross_topic": 1.0
+        },
+        "threshold": 0.85
+      }
+    },
+    "context_reuse_rate": {
+      "value": 1.0,
+      "details": {
+        "reuse_turns": 278,
+        "total_turns": 278
+      }
+    },
+    "token_efficiency": {
+      "value": 0.9619,
+      "details": {
+        "baseline_tokens": 7018,
+        "memory_tokens": 7296
+      }
+    },
+    "retrieval_precision": {
+      "value": 0.0,
+      "details": {
+        "num_queries_with_retrieval": 0,
+        "precisions": []
+      }
+    },
+    "latency_impact": {
+      "value": {
+        "baseline_avg": 0.0,
+        "baseline_p50": 0.0,
+        "baseline_p95": 0.0,
+        "memory_avg": 0.0,
+        "memory_p50": 0.0,
+        "memory_p95": 0.0,
+        "overhead_ms": 0.0
+      },
+      "details": {
+        "baseline_turns": 278,
+        "memory_turns": 278
+      }
+    }
+  },
+  "baseline_metrics": [
+    {
+      "name": "total_tokens",
+      "value": 7018,
+      "details": {}
+    },
+    {
+      "name": "avg_latency",
+      "value": 0.0,
+      "details": {}
+    }
+  ],
+  "memory_metrics": [
+    {
+      "name": "consistency_score",
+      "value": 0.9965,
+      "details": {
+        "per_topic": {
+          "pix_fees": 1.0,
+          "pix_deadlines": 0.9912917271407837,
+          "pix_compliance": 1.0,
+          "pix_comparisons": 0.989517819706499,
+          "cross_topic": 1.0
+        },
+        "threshold": 0.85
+      }
+    },
+    {
+      "name": "context_reuse_rate",
+      "value": 1.0,
+      "details": {
+        "reuse_turns": 278,
+        "total_turns": 278
+      }
+    },
+    {
+      "name": "token_efficiency",
+      "value": 0.9619,
+      "details": {
+        "baseline_tokens": 7018,
+        "memory_tokens": 7296
+      }
+    },
+    {
+      "name": "retrieval_precision",
+      "value": 0.0,
+      "details": {
+        "num_queries_with_retrieval": 0,
+        "precisions": []
+      }
+    },
+    {
+      "name": "latency_impact",
+      "value": {
+        "baseline_avg": 0.0,
+        "baseline_p50": 0.0,
+        "baseline_p95": 0.0,
+        "memory_avg": 0.0,
+        "memory_p50": 0.0,
+        "memory_p95": 0.0,
+        "overhead_ms": 0.0
+      },
+      "details": {
+        "baseline_turns": 278,
+        "memory_turns": 278
+      }
+    }
+  ],
+  "per_session": [
+    {
+      "session_id": "f10d5ebf8f2c",
+      "topic": "pix_fees",
+      "baseline_tokens": 166,
+      "memory_tokens": 174,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "48e7324d481e",
+      "topic": "pix_fees",
+      "baseline_tokens": 90,
+      "memory_tokens": 94,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "01f39d278c32",
+      "topic": "pix_fees",
+      "baseline_tokens": 106,
+      "memory_tokens": 110,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "4ed7001bc741",
+      "topic": "pix_fees",
+      "baseline_tokens": 96,
+      "memory_tokens": 100,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "833ef737f211",
+      "topic": "pix_fees",
+      "baseline_tokens": 126,
+      "memory_tokens": 131,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 5,
+      "memory_turns": 5
+    },
+    {
+      "session_id": "c421983fcae2",
+      "topic": "pix_fees",
+      "baseline_tokens": 114,
+      "memory_tokens": 119,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 5,
+      "memory_turns": 5
+    },
+    {
+      "session_id": "6eff2554c0e6",
+      "topic": "pix_fees",
+      "baseline_tokens": 86,
+      "memory_tokens": 90,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "9664c8d4a7bd",
+      "topic": "pix_fees",
+      "baseline_tokens": 98,
+      "memory_tokens": 103,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 5,
+      "memory_turns": 5
+    },
+    {
+      "session_id": "f405d265d34e",
+      "topic": "pix_fees",
+      "baseline_tokens": 94,
+      "memory_tokens": 98,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "96ef357268bf",
+      "topic": "pix_fees",
+      "baseline_tokens": 92,
+      "memory_tokens": 96,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "37629a4d6b86",
+      "topic": "pix_deadlines",
+      "baseline_tokens": 206,
+      "memory_tokens": 214,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "908656905ac3",
+      "topic": "pix_deadlines",
+      "baseline_tokens": 99,
+      "memory_tokens": 103,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "72fd5e9676ac",
+      "topic": "pix_deadlines",
+      "baseline_tokens": 199,
+      "memory_tokens": 207,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "80b78251d0ec",
+      "topic": "pix_deadlines",
+      "baseline_tokens": 81,
+      "memory_tokens": 84,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 3,
+      "memory_turns": 3
+    },
+    {
+      "session_id": "368bdbbe1ffe",
+      "topic": "pix_deadlines",
+      "baseline_tokens": 84,
+      "memory_tokens": 87,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 3,
+      "memory_turns": 3
+    },
+    {
+      "session_id": "aed2d354eb5c",
+      "topic": "pix_deadlines",
+      "baseline_tokens": 186,
+      "memory_tokens": 194,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "c04377adbf5f",
+      "topic": "pix_deadlines",
+      "baseline_tokens": 98,
+      "memory_tokens": 102,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "4adbd3c682b1",
+      "topic": "pix_deadlines",
+      "baseline_tokens": 107,
+      "memory_tokens": 111,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "da604eaf2610",
+      "topic": "pix_deadlines",
+      "baseline_tokens": 188,
+      "memory_tokens": 195,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 7,
+      "memory_turns": 7
+    },
+    {
+      "session_id": "3c3f84254f39",
+      "topic": "pix_deadlines",
+      "baseline_tokens": 102,
+      "memory_tokens": 106,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "5e086c0c1bed",
+      "topic": "pix_compliance",
+      "baseline_tokens": 70,
+      "memory_tokens": 73,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 3,
+      "memory_turns": 3
+    },
+    {
+      "session_id": "3a308b9eab6f",
+      "topic": "pix_compliance",
+      "baseline_tokens": 126,
+      "memory_tokens": 131,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 5,
+      "memory_turns": 5
+    },
+    {
+      "session_id": "576e78cd97b7",
+      "topic": "pix_compliance",
+      "baseline_tokens": 162,
+      "memory_tokens": 168,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 6,
+      "memory_turns": 6
+    },
+    {
+      "session_id": "7ceb24575817",
+      "topic": "pix_compliance",
+      "baseline_tokens": 204,
+      "memory_tokens": 212,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "03261ae9e104",
+      "topic": "pix_compliance",
+      "baseline_tokens": 146,
+      "memory_tokens": 152,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 6,
+      "memory_turns": 6
+    },
+    {
+      "session_id": "b4b6e5d1d2bd",
+      "topic": "pix_compliance",
+      "baseline_tokens": 166,
+      "memory_tokens": 172,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 6,
+      "memory_turns": 6
+    },
+    {
+      "session_id": "7a7d2c8f2bb1",
+      "topic": "pix_compliance",
+      "baseline_tokens": 130,
+      "memory_tokens": 135,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 5,
+      "memory_turns": 5
+    },
+    {
+      "session_id": "fad42864eb16",
+      "topic": "pix_compliance",
+      "baseline_tokens": 182,
+      "memory_tokens": 190,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "342af0956c8d",
+      "topic": "pix_compliance",
+      "baseline_tokens": 200,
+      "memory_tokens": 208,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "609542c9e3bb",
+      "topic": "pix_compliance",
+      "baseline_tokens": 146,
+      "memory_tokens": 152,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 6,
+      "memory_turns": 6
+    },
+    {
+      "session_id": "6c19bc1267b2",
+      "topic": "pix_comparisons",
+      "baseline_tokens": 138,
+      "memory_tokens": 143,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 5,
+      "memory_turns": 5
+    },
+    {
+      "session_id": "1d2e1666c50a",
+      "topic": "pix_comparisons",
+      "baseline_tokens": 214,
+      "memory_tokens": 222,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "8ff6c6f74871",
+      "topic": "pix_comparisons",
+      "baseline_tokens": 110,
+      "memory_tokens": 114,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "f1abaa869099",
+      "topic": "pix_comparisons",
+      "baseline_tokens": 128,
+      "memory_tokens": 133,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 5,
+      "memory_turns": 5
+    },
+    {
+      "session_id": "c5b9a9311e58",
+      "topic": "pix_comparisons",
+      "baseline_tokens": 206,
+      "memory_tokens": 214,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "1254c0ca5c0c",
+      "topic": "pix_comparisons",
+      "baseline_tokens": 118,
+      "memory_tokens": 122,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "989b1c92529d",
+      "topic": "pix_comparisons",
+      "baseline_tokens": 98,
+      "memory_tokens": 102,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "a537fc50de37",
+      "topic": "pix_comparisons",
+      "baseline_tokens": 162,
+      "memory_tokens": 168,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 6,
+      "memory_turns": 6
+    },
+    {
+      "session_id": "c9d3f5f29e48",
+      "topic": "pix_comparisons",
+      "baseline_tokens": 130,
+      "memory_tokens": 135,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 5,
+      "memory_turns": 5
+    },
+    {
+      "session_id": "08fca8303aac",
+      "topic": "pix_comparisons",
+      "baseline_tokens": 136,
+      "memory_tokens": 141,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 5,
+      "memory_turns": 5
+    },
+    {
+      "session_id": "040a888db9e4",
+      "topic": "cross_topic",
+      "baseline_tokens": 138,
+      "memory_tokens": 143,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 5,
+      "memory_turns": 5
+    },
+    {
+      "session_id": "78cfe03847d6",
+      "topic": "cross_topic",
+      "baseline_tokens": 178,
+      "memory_tokens": 185,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 7,
+      "memory_turns": 7
+    },
+    {
+      "session_id": "8a80b28e7561",
+      "topic": "cross_topic",
+      "baseline_tokens": 212,
+      "memory_tokens": 220,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "8de716cfe11e",
+      "topic": "cross_topic",
+      "baseline_tokens": 188,
+      "memory_tokens": 195,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 7,
+      "memory_turns": 7
+    },
+    {
+      "session_id": "da2573e176bb",
+      "topic": "cross_topic",
+      "baseline_tokens": 190,
+      "memory_tokens": 198,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "1333e1d0ed07",
+      "topic": "cross_topic",
+      "baseline_tokens": 85,
+      "memory_tokens": 88,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 3,
+      "memory_turns": 3
+    },
+    {
+      "session_id": "9707f7243e59",
+      "topic": "cross_topic",
+      "baseline_tokens": 198,
+      "memory_tokens": 206,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 8,
+      "memory_turns": 8
+    },
+    {
+      "session_id": "8012be773c6b",
+      "topic": "cross_topic",
+      "baseline_tokens": 98,
+      "memory_tokens": 102,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 4,
+      "memory_turns": 4
+    },
+    {
+      "session_id": "259fa6366423",
+      "topic": "cross_topic",
+      "baseline_tokens": 193,
+      "memory_tokens": 200,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 7,
+      "memory_turns": 7
+    },
+    {
+      "session_id": "9ad2875e3a46",
+      "topic": "cross_topic",
+      "baseline_tokens": 148,
+      "memory_tokens": 154,
+      "baseline_avg_latency": 0.0,
+      "memory_avg_latency": 0.0,
+      "baseline_turns": 6,
+      "memory_turns": 6
+    }
+  ]
+}
