@@ -25,44 +25,26 @@ A LangGraph state graph orchestrates retrieval, reasoning, tool use, and memory 
 
 ```mermaid
 flowchart TB
-    User([User / Simulator])
-    UI[Streamlit Chat Interface]
-    Agent[Agent Orchestrator — LangGraph]
+    User([User / Simulator]) --> UI[Streamlit Chat UI] --> Retrieve
 
-    User --> UI --> Agent
-
-    subgraph Agent Loop
+    subgraph AgentLoop [Agent Loop - LangGraph]
         direction LR
-        Retrieve[Retrieve Memory] --> Reason[Reason — LLM]
+        Retrieve[Retrieve Memory] --> Reason[Reason - LLM]
         Reason --> Tool{Tool needed?}
         Tool -->|Yes| ToolCall[Tool Call] --> Reason
         Tool -->|No| Write[Write Memory]
     end
 
-    Agent --> Agent Loop
+    Retrieve --> Conv
+    Retrieve --> Sem
+    Write --> Conv
+    Write --> Sem
 
-    subgraph Memory Layer
-        direction TB
-        Conv[Conversational — PostgreSQL]
-        Sem[Semantic — Weaviate]
-        Proc[Procedural — Weaviate]
-        Summ[Summary — PostgreSQL]
-    end
-
-    subgraph Context Builder
-        direction TB
-        CB[Merge memory + retrieval into prompt]
-    end
-
-    Retrieve --> Memory Layer
-    Retrieve --> CB
-    Write --> Memory Layer
-
-    subgraph Infrastructure
-        direction LR
-        PG[(PostgreSQL)]
-        WV[(Weaviate)]
-        OL[Ollama — Llama]
+    subgraph MemoryLayer [Memory Layer]
+        Conv[Conversational - PostgreSQL]
+        Sem[Semantic - Weaviate]
+        Proc[Procedural - Weaviate]
+        Summ[Summary - PostgreSQL]
     end
 
     Conv --- PG
@@ -70,6 +52,10 @@ flowchart TB
     Sem --- WV
     Proc --- WV
     Reason --- OL
+
+    PG[(PostgreSQL)]
+    WV[(Weaviate)]
+    OL[Ollama - Llama]
 ```
 
 ## Tech Stack
