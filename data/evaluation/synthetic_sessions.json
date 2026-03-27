@@ -1,0 +1,3888 @@
+[
+  {
+    "session_id": "f10d5ebf8f2c",
+    "topic": "pix_fees",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the fees for PIX transactions?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there a limit on those fees?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that apply to all bank types?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about for businesses?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Has that changed recently?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the fees for PIX transactions?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about for businesses?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is that the same for credit unions?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 0,
+      "topic_description": "PIX transaction fees, costs, and pricing rules"
+    }
+  },
+  {
+    "session_id": "48e7324d481e",
+    "topic": "pix_fees",
+    "turns": [
+      {
+        "role": "user",
+        "content": "Are there any hidden costs in PIX transactions?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Has that changed recently?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Has that changed recently?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What happens if they exceed that amount?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 1,
+      "topic_description": "PIX transaction fees, costs, and pricing rules"
+    }
+  },
+  {
+    "session_id": "01f39d278c32",
+    "topic": "pix_fees",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What is the fee policy for businesses using PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the deadline for that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the fees for receiving payments?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you explain that in more detail?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 2,
+      "topic_description": "PIX transaction fees, costs, and pricing rules"
+    }
+  },
+  {
+    "session_id": "4ed7001bc741",
+    "topic": "pix_fees",
+    "turns": [
+      {
+        "role": "user",
+        "content": "Are PIX transfers free for individuals?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the deadline for that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the fees for receiving payments?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there a limit on those fees?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 3,
+      "topic_description": "PIX transaction fees, costs, and pricing rules"
+    }
+  },
+  {
+    "session_id": "833ef737f211",
+    "topic": "pix_fees",
+    "turns": [
+      {
+        "role": "user",
+        "content": "Are there any hidden costs in PIX transactions?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the deadline for that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Are there any hidden costs in PIX transactions?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the fees for receiving payments?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Has that changed recently?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 4,
+      "topic_description": "PIX transaction fees, costs, and pricing rules"
+    }
+  },
+  {
+    "session_id": "c421983fcae2",
+    "topic": "pix_fees",
+    "turns": [
+      {
+        "role": "user",
+        "content": "Are there any hidden costs in PIX transactions?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Are there exceptions to that rule?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about for businesses?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that apply to all bank types?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the deadline for that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 5,
+      "topic_description": "PIX transaction fees, costs, and pricing rules"
+    }
+  },
+  {
+    "session_id": "6eff2554c0e6",
+    "topic": "pix_fees",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the fees for PIX transactions?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can banks charge fees for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can banks charge fees for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is that the same for credit unions?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 6,
+      "topic_description": "PIX transaction fees, costs, and pricing rules"
+    }
+  },
+  {
+    "session_id": "9664c8d4a7bd",
+    "topic": "pix_fees",
+    "turns": [
+      {
+        "role": "user",
+        "content": "Can banks charge fees for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there a limit on those fees?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Has that changed recently?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Has that changed recently?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is that the same for credit unions?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 7,
+      "topic_description": "PIX transaction fees, costs, and pricing rules"
+    }
+  },
+  {
+    "session_id": "f405d265d34e",
+    "topic": "pix_fees",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What is the fee policy for businesses using PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can banks charge fees for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there a limit on those fees?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the deadline for that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 8,
+      "topic_description": "PIX transaction fees, costs, and pricing rules"
+    }
+  },
+  {
+    "session_id": "96ef357268bf",
+    "topic": "pix_fees",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the fees for PIX transactions?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What happens if they exceed that amount?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the deadline for that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Has that changed recently?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 9,
+      "topic_description": "PIX transaction fees, costs, and pricing rules"
+    }
+  },
+  {
+    "session_id": "37629a4d6b86",
+    "topic": "pix_deadlines",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What is the timeline for PIX regulatory updates?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What was the previous deadline?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Are there penalties for missing PIX deadlines?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that apply to smaller institutions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there an extension available?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there any flexibility on that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "When was the latest PIX regulation published?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What is the timeline for PIX regulatory updates?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 0,
+      "topic_description": "PIX regulatory deadlines, compliance timelines"
+    }
+  },
+  {
+    "session_id": "908656905ac3",
+    "topic": "pix_deadlines",
+    "turns": [
+      {
+        "role": "user",
+        "content": "When must institutions implement PIX instant payments?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the deadlines for PIX compliance?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What happens after that deadline?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does the same rule apply here?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 1,
+      "topic_description": "PIX regulatory deadlines, compliance timelines"
+    }
+  },
+  {
+    "session_id": "72fd5e9676ac",
+    "topic": "pix_deadlines",
+    "turns": [
+      {
+        "role": "user",
+        "content": "When must institutions implement PIX instant payments?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "When was the latest PIX regulation published?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What was the previous deadline?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "When was the latest PIX regulation published?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "When was the latest PIX regulation published?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there any flexibility on that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What happens after that deadline?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you clarify that timeline?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 2,
+      "topic_description": "PIX regulatory deadlines, compliance timelines"
+    }
+  },
+  {
+    "session_id": "80b78251d0ec",
+    "topic": "pix_deadlines",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What is the timeline for PIX regulatory updates?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "When must institutions implement PIX instant payments?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about the second phase?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 3,
+      "topic_description": "PIX regulatory deadlines, compliance timelines"
+    }
+  },
+  {
+    "session_id": "368bdbbe1ffe",
+    "topic": "pix_deadlines",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What is the timeline for PIX regulatory updates?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does that compare to international standards?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what are the consequences of that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 4,
+      "topic_description": "PIX regulatory deadlines, compliance timelines"
+    }
+  },
+  {
+    "session_id": "aed2d354eb5c",
+    "topic": "pix_deadlines",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What is the timeline for PIX regulatory updates?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there an extension available?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does the same rule apply here?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does that compare to international standards?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about the second phase?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What happens after that deadline?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you clarify that timeline?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What happens after that deadline?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 5,
+      "topic_description": "PIX regulatory deadlines, compliance timelines"
+    }
+  },
+  {
+    "session_id": "c04377adbf5f",
+    "topic": "pix_deadlines",
+    "turns": [
+      {
+        "role": "user",
+        "content": "When was the latest PIX regulation published?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What happens after that deadline?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the deadlines for PIX compliance?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there any flexibility on that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 6,
+      "topic_description": "PIX regulatory deadlines, compliance timelines"
+    }
+  },
+  {
+    "session_id": "4adbd3c682b1",
+    "topic": "pix_deadlines",
+    "turns": [
+      {
+        "role": "user",
+        "content": "When must institutions implement PIX instant payments?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "When was the latest PIX regulation published?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that apply to smaller institutions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there any flexibility on that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 7,
+      "topic_description": "PIX regulatory deadlines, compliance timelines"
+    }
+  },
+  {
+    "session_id": "da604eaf2610",
+    "topic": "pix_deadlines",
+    "turns": [
+      {
+        "role": "user",
+        "content": "Are there penalties for missing PIX deadlines?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does that compare to international standards?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that apply to smaller institutions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What is the timeline for PIX regulatory updates?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "When was the latest PIX regulation published?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the deadlines for PIX compliance?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does the same rule apply here?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 8,
+      "topic_description": "PIX regulatory deadlines, compliance timelines"
+    }
+  },
+  {
+    "session_id": "3c3f84254f39",
+    "topic": "pix_deadlines",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the deadlines for PIX compliance?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what are the consequences of that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does that compare to international standards?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What happens after that deadline?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 9,
+      "topic_description": "PIX regulatory deadlines, compliance timelines"
+    }
+  },
+  {
+    "session_id": "5e086c0c1bed",
+    "topic": "pix_compliance",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the security requirements for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What documentation is required?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And how does that affect the reporting?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 0,
+      "topic_description": "PIX compliance requirements, security rules, reporting"
+    }
+  },
+  {
+    "session_id": "3a308b9eab6f",
+    "topic": "pix_compliance",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the security requirements for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the penalties for non-compliance?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How should institutions report PIX fraud?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Who audits these requirements?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that cover international transfers too?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 1,
+      "topic_description": "PIX compliance requirements, security rules, reporting"
+    }
+  },
+  {
+    "session_id": "576e78cd97b7",
+    "topic": "pix_compliance",
+    "turns": [
+      {
+        "role": "user",
+        "content": "How should institutions report PIX fraud?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the anti-fraud measures required for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What documentation is required?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there a grace period for new participants?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What if they already have that certification?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the anti-fraud measures required for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 2,
+      "topic_description": "PIX compliance requirements, security rules, reporting"
+    }
+  },
+  {
+    "session_id": "7ceb24575817",
+    "topic": "pix_compliance",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the security requirements for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What documentation is required?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What compliance certifications are needed for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How often must reports be submitted?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How often must reports be submitted?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How should institutions report PIX fraud?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How should institutions report PIX fraud?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can smaller institutions be exempt from that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 3,
+      "topic_description": "PIX compliance requirements, security rules, reporting"
+    }
+  },
+  {
+    "session_id": "03261ae9e104",
+    "topic": "pix_compliance",
+    "turns": [
+      {
+        "role": "user",
+        "content": "How should institutions report PIX fraud?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there a grace period for new participants?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What documentation is required?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What documentation is required?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How often must reports be submitted?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What if they already have that certification?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 4,
+      "topic_description": "PIX compliance requirements, security rules, reporting"
+    }
+  },
+  {
+    "session_id": "b4b6e5d1d2bd",
+    "topic": "pix_compliance",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the anti-fraud measures required for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there a grace period for new participants?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How often must reports be submitted?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the security requirements for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What compliance certifications are needed for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What if they already have that certification?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 5,
+      "topic_description": "PIX compliance requirements, security rules, reporting"
+    }
+  },
+  {
+    "session_id": "7a7d2c8f2bb1",
+    "topic": "pix_compliance",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the anti-fraud measures required for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How should institutions report PIX fraud?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the penalties for non-compliance?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What documentation is required?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that cover international transfers too?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 6,
+      "topic_description": "PIX compliance requirements, security rules, reporting"
+    }
+  },
+  {
+    "session_id": "fad42864eb16",
+    "topic": "pix_compliance",
+    "turns": [
+      {
+        "role": "user",
+        "content": "How does PIX handle data protection?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the penalties for non-compliance?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What documentation is required?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does PIX handle data protection?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What documentation is required?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How often must reports be submitted?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Who audits these requirements?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And how does that affect the reporting?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 7,
+      "topic_description": "PIX compliance requirements, security rules, reporting"
+    }
+  },
+  {
+    "session_id": "342af0956c8d",
+    "topic": "pix_compliance",
+    "turns": [
+      {
+        "role": "user",
+        "content": "How should institutions report PIX fraud?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the security requirements for PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Who audits these requirements?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Who audits these requirements?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there a grace period for new participants?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can smaller institutions be exempt from that?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the penalties for non-compliance?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the penalties for non-compliance?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 8,
+      "topic_description": "PIX compliance requirements, security rules, reporting"
+    }
+  },
+  {
+    "session_id": "609542c9e3bb",
+    "topic": "pix_compliance",
+    "turns": [
+      {
+        "role": "user",
+        "content": "How should institutions report PIX fraud?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What if they already have that certification?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And how does that affect the reporting?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there a grace period for new participants?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What documentation is required?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Who audits these requirements?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 9,
+      "topic_description": "PIX compliance requirements, security rules, reporting"
+    }
+  },
+  {
+    "session_id": "6c19bc1267b2",
+    "topic": "pix_comparisons",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What advantages does PIX have over credit cards?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the other one?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that advantage hold for large transactions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that difference really matter in practice?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is PIX more regulated than other payment methods?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 0,
+      "topic_description": "PIX vs other payment methods, regulatory comparisons"
+    }
+  },
+  {
+    "session_id": "1d2e1666c50a",
+    "topic": "pix_comparisons",
+    "turns": [
+      {
+        "role": "user",
+        "content": "How does PIX regulation compare to international instant payments?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there a transaction limit difference?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the other one?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that advantage hold for large transactions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Which one is cheaper for businesses?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that advantage hold for large transactions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does that affect consumers?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that advantage hold for large transactions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 1,
+      "topic_description": "PIX vs other payment methods, regulatory comparisons"
+    }
+  },
+  {
+    "session_id": "8ff6c6f74871",
+    "topic": "pix_comparisons",
+    "turns": [
+      {
+        "role": "user",
+        "content": "How does PIX regulation compare to international instant payments?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does PIX regulation compare to international instant payments?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Which one is cheaper for businesses?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is that expected to change?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 2,
+      "topic_description": "PIX vs other payment methods, regulatory comparisons"
+    }
+  },
+  {
+    "session_id": "f1abaa869099",
+    "topic": "pix_comparisons",
+    "turns": [
+      {
+        "role": "user",
+        "content": "How does PIX compare to TED and DOC?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that advantage hold for large transactions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that advantage hold for large transactions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about from a security perspective?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does that affect consumers?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 3,
+      "topic_description": "PIX vs other payment methods, regulatory comparisons"
+    }
+  },
+  {
+    "session_id": "c5b9a9311e58",
+    "topic": "pix_comparisons",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the differences between PIX and boleto?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Which one is cheaper for businesses?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And in terms of settlement time?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that advantage hold for large transactions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about from a security perspective?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Which one is cheaper for businesses?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you quantify that advantage?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that advantage hold for large transactions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 4,
+      "topic_description": "PIX vs other payment methods, regulatory comparisons"
+    }
+  },
+  {
+    "session_id": "1254c0ca5c0c",
+    "topic": "pix_comparisons",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What advantages does PIX have over credit cards?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that advantage hold for large transactions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is PIX more regulated than other payment methods?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that difference really matter in practice?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 5,
+      "topic_description": "PIX vs other payment methods, regulatory comparisons"
+    }
+  },
+  {
+    "session_id": "989b1c92529d",
+    "topic": "pix_comparisons",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What advantages does PIX have over credit cards?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about from a security perspective?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And in terms of settlement time?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you quantify that advantage?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 6,
+      "topic_description": "PIX vs other payment methods, regulatory comparisons"
+    }
+  },
+  {
+    "session_id": "a537fc50de37",
+    "topic": "pix_comparisons",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What advantages does PIX have over credit cards?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that difference really matter in practice?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about from a security perspective?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about from a security perspective?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And in terms of settlement time?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does PIX regulation compare to international instant payments?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 7,
+      "topic_description": "PIX vs other payment methods, regulatory comparisons"
+    }
+  },
+  {
+    "session_id": "c9d3f5f29e48",
+    "topic": "pix_comparisons",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What advantages does PIX have over credit cards?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Which one is cheaper for businesses?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about from a security perspective?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you quantify that advantage?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that advantage hold for large transactions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 8,
+      "topic_description": "PIX vs other payment methods, regulatory comparisons"
+    }
+  },
+  {
+    "session_id": "08fca8303aac",
+    "topic": "pix_comparisons",
+    "turns": [
+      {
+        "role": "user",
+        "content": "Is PIX more regulated than other payment methods?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is PIX more regulated than other payment methods?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And what about the other one?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that advantage hold for large transactions?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is there a transaction limit difference?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 9,
+      "topic_description": "PIX vs other payment methods, regulatory comparisons"
+    }
+  },
+  {
+    "session_id": "040a888db9e4",
+    "topic": "cross_topic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "Give me an overview of PIX regulations.",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the enforcement mechanisms?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the most important PIX rules for a payment institution?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that fee structure apply in that case too?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you compare that to the previous version?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 0,
+      "topic_description": "Questions spanning multiple regulatory areas"
+    }
+  },
+  {
+    "session_id": "78cfe03847d6",
+    "topic": "cross_topic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What should a new fintech know about PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Going back to the first point, can you elaborate?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Give me an overview of PIX regulations.",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does security fit into that?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Give me an overview of PIX regulations.",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you tie those points together?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Going back to the first point, can you elaborate?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 1,
+      "topic_description": "Questions spanning multiple regulatory areas"
+    }
+  },
+  {
+    "session_id": "8a80b28e7561",
+    "topic": "cross_topic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the most important PIX rules for a payment institution?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that fee structure apply in that case too?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that fee structure apply in that case too?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you tie those points together?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And the compliance deadlines?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How has PIX regulation evolved since launch?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the enforcement mechanisms?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that fee structure apply in that case too?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 2,
+      "topic_description": "Questions spanning multiple regulatory areas"
+    }
+  },
+  {
+    "session_id": "8de716cfe11e",
+    "topic": "cross_topic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "Give me an overview of PIX regulations.",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is that connected to the compliance requirements?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you compare that to the previous version?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that fee structure apply in that case too?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How has PIX regulation evolved since launch?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the enforcement mechanisms?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What should a new fintech know about PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 3,
+      "topic_description": "Questions spanning multiple regulatory areas"
+    }
+  },
+  {
+    "session_id": "da2573e176bb",
+    "topic": "cross_topic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "Give me an overview of PIX regulations.",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you tie those points together?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Going back to the first point, can you elaborate?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does security fit into that?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And the compliance deadlines?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about the fee structure specifically?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And the compliance deadlines?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the upcoming changes to PIX rules?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 4,
+      "topic_description": "Questions spanning multiple regulatory areas"
+    }
+  },
+  {
+    "session_id": "1333e1d0ed07",
+    "topic": "cross_topic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "How has PIX regulation evolved since launch?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the upcoming changes to PIX rules?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And how does that relate to what you mentioned earlier?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 5,
+      "topic_description": "Questions spanning multiple regulatory areas"
+    }
+  },
+  {
+    "session_id": "9707f7243e59",
+    "topic": "cross_topic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "How has PIX regulation evolved since launch?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How has PIX regulation evolved since launch?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And the compliance deadlines?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What about the fee structure specifically?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What should a new fintech know about PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the enforcement mechanisms?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Give me an overview of PIX regulations.",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you tie those points together?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 6,
+      "topic_description": "Questions spanning multiple regulatory areas"
+    }
+  },
+  {
+    "session_id": "8012be773c6b",
+    "topic": "cross_topic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "Give me an overview of PIX regulations.",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What should a new fintech know about PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the upcoming changes to PIX rules?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you tie those points together?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 7,
+      "topic_description": "Questions spanning multiple regulatory areas"
+    }
+  },
+  {
+    "session_id": "259fa6366423",
+    "topic": "cross_topic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What are the most important PIX rules for a payment institution?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the upcoming changes to PIX rules?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What are the upcoming changes to PIX rules?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "What should a new fintech know about PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How has PIX regulation evolved since launch?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And how does that relate to what you mentioned earlier?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Can you tie those points together?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 8,
+      "topic_description": "Questions spanning multiple regulatory areas"
+    }
+  },
+  {
+    "session_id": "9ad2875e3a46",
+    "topic": "cross_topic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "What should a new fintech know about PIX?",
+        "expected_behavior": "direct",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Does that fee structure apply in that case too?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does security fit into that?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "How does security fit into that?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "Is that connected to the compliance requirements?",
+        "expected_behavior": "implicit_reference",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      },
+      {
+        "role": "user",
+        "content": "And the compliance deadlines?",
+        "expected_behavior": "follow_up",
+        "metadata": {}
+      },
+      {
+        "role": "assistant",
+        "content": "[agent response placeholder]",
+        "expected_behavior": "answer",
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "seed": 42,
+      "index": 9,
+      "topic_description": "Questions spanning multiple regulatory areas"
+    }
+  }
+]
