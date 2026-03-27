@@ -93,6 +93,11 @@ class MemorySettings(BaseModel):
     procedural_top_k: int = 3
 
 
+class AgentSettings(BaseModel):
+    max_iterations: int = 5
+    tool_timeout_s: float = 30.0
+
+
 class LoggingSettings(BaseModel):
     level: str = "INFO"
     format: Literal["text", "json"] = "text"
@@ -142,6 +147,7 @@ class Settings(BaseSettings):
     phoenix: PhoenixSettings = PhoenixSettings()
     database: DatabaseSettings = DatabaseSettings()
     memory: MemorySettings = MemorySettings()
+    agent: AgentSettings = AgentSettings()
     logging: LoggingSettings = LoggingSettings()
 
     @classmethod
