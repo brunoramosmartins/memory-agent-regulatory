@@ -98,6 +98,11 @@ class AgentSettings(BaseModel):
     tool_timeout_s: float = 30.0
 
 
+class IngestionSettings(BaseModel):
+    sources: list[dict[str, Any]] = Field(default_factory=list)
+    web_delay: float = 1.0
+
+
 class LoggingSettings(BaseModel):
     level: str = "INFO"
     format: Literal["text", "json"] = "text"
@@ -148,6 +153,7 @@ class Settings(BaseSettings):
     database: DatabaseSettings = DatabaseSettings()
     memory: MemorySettings = MemorySettings()
     agent: AgentSettings = AgentSettings()
+    ingestion: IngestionSettings = IngestionSettings()
     logging: LoggingSettings = LoggingSettings()
 
     @classmethod

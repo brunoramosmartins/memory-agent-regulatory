@@ -59,6 +59,18 @@ memory:
   semantic_top_k: 5              # top-k results for semantic memory search
   procedural_top_k: 3            # top-k results for procedural pattern search
 
+ingestion:
+  sources:
+    # Example PDF source — update the path to your regulatory PDF
+    # - type: "pdf"
+    #   path: "data/regulation.pdf"
+    # Example web source — uncomment and set your target URL
+    # - type: "web"
+    #   url: "https://example.com/faq"
+    #   delay: 1.0
+    []
+  web_delay: 1.0               # default delay between web requests (seconds)
+
 logging:
   level: "INFO"
   format: "text"              # "text" (human-readable) or "json" (structured)

@@ -24,6 +24,7 @@ A LangGraph state graph orchestrates retrieval, reasoning, tool use, and memory 
 ## Architecture
 
 ```mermaid
+%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#1a1a2e', 'primaryTextColor': '#e0e0e0', 'primaryBorderColor': '#7c3aed', 'lineColor': '#7c3aed', 'secondaryColor': '#16213e', 'tertiaryColor': '#0f3460', 'edgeLabelBackground': '#1a1a2e', 'clusterBkg': '#16213e', 'clusterBorder': '#7c3aed'}}}%%
 flowchart TB
     User([User / Simulator]) --> UI[Streamlit Chat UI] --> Retrieve
 
@@ -56,6 +57,12 @@ flowchart TB
     PG[(PostgreSQL)]
     WV[(Weaviate)]
     OL[Ollama - Llama]
+
+    style User fill:#0f3460,stroke:#7c3aed,color:#e0e0e0
+    style UI fill:#1a1a2e,stroke:#7c3aed,color:#e0e0e0
+    style PG fill:#0f3460,stroke:#e94560,color:#e0e0e0
+    style WV fill:#0f3460,stroke:#e94560,color:#e0e0e0
+    style OL fill:#0f3460,stroke:#e94560,color:#e0e0e0
 ```
 
 ## Tech Stack
