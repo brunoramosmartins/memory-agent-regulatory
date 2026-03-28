@@ -69,6 +69,7 @@ def scrape_url(
     url: str,
     timeout: float = 30.0,
     delay: float = 0.0,
+    alias: str = "",
 ) -> list[Document]:
     """Fetch and parse a web page into Document objects.
 
@@ -78,6 +79,7 @@ def scrape_url(
         url: URL to scrape.
         timeout: HTTP request timeout in seconds.
         delay: Delay in seconds before the request (rate limiting).
+        alias: Human-readable name for this source (e.g. "FAQ PIX e Transferências").
 
     Returns:
         List of Document objects, one per heading section.
@@ -123,7 +125,7 @@ def scrape_url(
                 document_id=f"{url_hash}-s{i}",
                 page_number=0,
                 section_title=heading,
-                metadata={"url": url, "section_index": i},
+                metadata={"url": url, "alias": alias or url, "section_index": i},
             )
         )
 

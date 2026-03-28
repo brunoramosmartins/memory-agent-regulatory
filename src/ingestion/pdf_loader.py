@@ -11,11 +11,12 @@ from src.ingestion.models import Document
 logger = logging.getLogger(__name__)
 
 
-def load_pdf(path: str | Path) -> list[Document]:
+def load_pdf(path: str | Path, alias: str = "") -> list[Document]:
     """Extract text from a PDF file, one Document per page.
 
     Args:
         path: Path to the PDF file.
+        alias: Human-readable name for this source (e.g. "Manual de Tempos do PIX").
 
     Returns:
         List of Document objects, one per non-empty page.
@@ -51,7 +52,11 @@ def load_pdf(path: str | Path) -> list[Document]:
                     source_uri=str(path),
                     document_id=f"{doc_id}-p{page_num}",
                     page_number=page_num,
-                    metadata={"filename": path.name, "total_pages": len(pdf)},
+                    metadata={
+                        "filename": path.name,
+                        "alias": alias or path.stem,
+                        "total_pages": len(pdf),
+                    },
                 )
             )
 

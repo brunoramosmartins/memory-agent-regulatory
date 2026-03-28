@@ -61,15 +61,54 @@ memory:
 
 ingestion:
   sources:
-    # Example PDF source — update the path to your regulatory PDF
-    # - type: "pdf"
-    #   path: "data/regulation.pdf"
-    # Example web source — uncomment and set your target URL
-    # - type: "web"
-    #   url: "https://example.com/faq"
-    #   delay: 1.0
-    []
-  web_delay: 1.0               # default delay between web requests (seconds)
+    # ── PDFs regulatórios (BCB) ────────────────────────────────────────
+    - type: "pdf"
+      path: "data/sources/pdf/01_manual_uso_marca_pix.pdf"
+      alias: "Manual de Uso da Marca PIX"
+    - type: "pdf"
+      path: "data/sources/pdf/02_manual_padroes_iniciacao_pix.pdf"
+      alias: "Manual de Padrões para Iniciação do PIX"
+    - type: "pdf"
+      path: "data/sources/pdf/03_manual_fluxos_efetivacao_pix.pdf"
+      alias: "Manual de Fluxos do Processo de Efetivação do PIX"
+    - type: "pdf"
+      path: "data/sources/pdf/04_requisitos_minimos_experiencia_usuario.pdf"
+      alias: "Requisitos Mínimos para Experiência do Usuário"
+    - type: "pdf"
+      path: "data/sources/pdf/05_manual_tempos_pix.pdf"
+      alias: "Manual de Tempos do PIX"
+    - type: "pdf"
+      path: "data/sources/pdf/06_manual_operacional_dict.pdf"
+      alias: "Manual Operacional do DICT"
+    - type: "pdf"
+      path: "data/sources/pdf/07_manual_resolucao_disputas.pdf"
+      alias: "Manual de Resolução de Disputas"
+
+    # ── FAQs (web scraping) ────────────────────────────────────────────
+    - type: "web"
+      url: "https://www.bcb.gov.br/meubc/faqs/s/pix"
+      alias: "FAQ PIX e Transferências"
+      delay: 1.5
+    - type: "web"
+      url: "https://www.bcb.gov.br/meubc/faqs/p/o-que-e-e-como-funciona-o-mecanismo-especial-de-devolucao-med"
+      alias: "FAQ Mecanismo Especial de Devolução (MED)"
+      delay: 1.5
+    - type: "web"
+      url: "https://www.bcb.gov.br/estabilidadefinanceira/dict"
+      alias: "FAQ DICT"
+      delay: 1.5
+
+    # ── Resoluções BCB (web scraping) ──────────────────────────────────
+    - type: "web"
+      url: "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20BCB&numero=507"
+      alias: "Resolução BCB nº 507"
+      delay: 1.5
+    - type: "web"
+      url: "https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20BCB&numero=1"
+      alias: "Resolução BCB nº 1"
+      delay: 1.5
+
+  web_delay: 1.5               # default delay between web requests (seconds)
 
 logging:
   level: "INFO"

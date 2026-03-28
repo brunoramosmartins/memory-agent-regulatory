@@ -13,6 +13,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from src.memory.manager import MemoryContext
+from src.rag.document_aliases import get_document_alias
 
 if TYPE_CHECKING:
     from src.retrieval.models import RetrievalResult
@@ -31,8 +32,28 @@ def _estimate_tokens(text: str) -> int:
 
 def _format_chunk(chunk: RetrievalResult) -> str:
     """Format a single retrieval chunk with its source marker."""
-    marker = f"[{chunk.document_id}, p. {chunk.page_number}]"
+    alias = get_document_alias(chunk.source_file, chunk.document_id)
+    marker = f"[{alias}, p. {chunk.page_number}]"
     return f"{marker}\n{chunk.text}"
+
+
+def build_citations(chunks: list[RetrievalResult]) -> str:
+    """Build a deduplicated citation footer from retrieved chunks."""
+    if not chunks:
+        return ""
+    seen: set[str] = set()
+    citations: list[str] = []
+    for c in chunks:
+        alias = get_document_alias(c.source_file, c.document_id)
+        key = f"{alias}, p. {c.page_number}"
+        if key not in seen:
+            seen.add(key)
+            citations.append(key)
+    return (
+        "\n\n---\n*Fontes consultadas: "
+        + "; ".join(citations)
+        + ". Para verificar, consulte os documentos originais citados.*"
+    )
 
 
 def _build_section(header: str, content: str) -> str:

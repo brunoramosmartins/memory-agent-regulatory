@@ -1,0 +1,11 @@
+# Document display aliases
+# Maps PDF filename → human-readable name shown in citations.
+# Used by context_builder to replace cryptic document IDs with readable names.
+
+01_manual_uso_marca_pix.pdf: "Manual de Uso da Marca Pix v1.6"
+02_manual_padroes_iniciacao_pix.pdf: "Manual de Padroes para Iniciacao do Pix v2.9.0"
+03_manual_fluxos_efetivacao_pix.pdf: "Manual de Fluxos do Pix v2.1"
+04_requisitos_minimos_experiencia_usuario.pdf: "Requisitos Minimos de Experiencia do Usuario"
+05_manual_tempos_pix.pdf: "Manual de Tempos do Pix v7.0"
+06_manual_operacional_dict.pdf: "Manual Operacional do DICT (MED 2.0)"
+07_manual_resolucao_disputas.pdf: "Manual de Resolucao de Disputas v5.0"

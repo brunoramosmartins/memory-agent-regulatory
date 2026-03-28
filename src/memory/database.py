@@ -36,6 +36,16 @@ def get_session_factory(engine: Engine | None = None) -> sessionmaker[Session]:
     return _session_factory
 
 
+def get_session() -> Session:
+    """Create and return a new database session.
+
+    Convenience wrapper around get_session_factory() for callers that
+    need a ready-to-use session without managing the factory directly.
+    """
+    factory = get_session_factory()
+    return factory()
+
+
 def reset_engine() -> None:
     """Reset cached engine and session factory. Useful for tests."""
     global _engine, _session_factory

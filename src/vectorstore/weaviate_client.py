@@ -36,6 +36,14 @@ def get_weaviate_client(
     return _client
 
 
+def close_weaviate_client() -> None:
+    """Close the cached Weaviate client connection."""
+    global _client
+    if _client is not None:
+        _client.close()
+        _client = None
+
+
 def is_weaviate_ready(host: str | None = None, port: int | None = None) -> bool:
     """Check if Weaviate is reachable via REST API."""
     import requests

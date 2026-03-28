@@ -30,6 +30,8 @@ build/
 # Datasets (raw documents, processed outputs)
 data/raw/
 data/processed/
+data/sources/
+data/evaluation/report.*
 
 # Type checking
 .mypy_cache/
