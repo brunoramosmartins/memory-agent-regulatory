@@ -49,3 +49,26 @@ class SessionSummary(Base):
         default=lambda: datetime.now(timezone.utc),
         nullable=False,
     )
+
+
+class ResponseFeedback(Base):
+    """Stores thumbs-up/thumbs-down feedback on agent responses."""
+
+    __tablename__ = "response_feedback"
+
+    id: Mapped[str] = mapped_column(
+        String(36), primary_key=True, default=lambda: str(uuid.uuid4())
+    )
+    thread_id: Mapped[str] = mapped_column(String(36), nullable=False)
+    query: Mapped[str] = mapped_column(Text, nullable=False)
+    response: Mapped[str] = mapped_column(Text, nullable=False)
+    rating: Mapped[int] = mapped_column(Integer, nullable=False)  # 0=negative, 1=positive
+    timestamp: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True),
+        default=lambda: datetime.now(timezone.utc),
+        nullable=False,
+    )
+
+    __table_args__ = (
+        Index("ix_feedback_thread_ts", "thread_id", "timestamp"),
+    )

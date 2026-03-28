@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import functools
+import os
 from pathlib import Path
 from typing import Any, Literal
 
+from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -160,12 +162,29 @@ class Settings(BaseSettings):
     def from_yaml(cls, path: Path | None = None, **env_overrides: Any) -> Settings:
         """Build Settings from YAML file + environment variables.
 
-        This is the canonical constructor. It reads the YAML file first,
-        then lets pydantic-settings layer environment variables on top.
+        This is the canonical constructor. It:
+        1. Loads .env file into os.environ (via python-dotenv)
+        2. Reads config.yaml
+        3. Maps POSTGRES_* env vars to database settings
+        4. Lets pydantic-settings layer remaining env vars on top
         """
+        load_dotenv()
         yaml_data = _load_yaml(path or _CONFIG_PATH)
-        # Merge env_overrides into yaml_data (for testing)
         yaml_data.update(env_overrides)
+
+        # Map standard POSTGRES_* env vars to nested database settings
+        db = yaml_data.setdefault("database", {})
+        for env_key, yaml_key in [
+            ("POSTGRES_PASSWORD", "password"),
+            ("POSTGRES_USER", "user"),
+            ("POSTGRES_HOST", "host"),
+            ("POSTGRES_PORT", "port"),
+            ("POSTGRES_DB", "name"),
+        ]:
+            val = os.environ.get(env_key)
+            if val:
+                db[yaml_key] = int(val) if yaml_key == "port" else val
+
         return cls(**yaml_data)
 
 

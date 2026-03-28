@@ -68,6 +68,7 @@ def _split_text(text: str, chunk_size: int, overlap: int) -> list[str]:
     """Split text into overlapping windows.
 
     Tries to break at sentence boundaries (period + space) when possible.
+    Guarantees forward progress to avoid infinite loops.
     """
     if not text:
         return []
@@ -78,15 +79,23 @@ def _split_text(text: str, chunk_size: int, overlap: int) -> list[str]:
     start = 0
 
     while start < len(text):
-        end = start + chunk_size
+        end = min(start + chunk_size, len(text))
 
         if end < len(text):
-            # Try to break at a sentence boundary
-            break_point = text.rfind(". ", start, end)
+            # Try to break at a sentence boundary within the last 20% of the window
+            min_break = start + int(chunk_size * 0.8)
+            break_point = text.rfind(". ", min_break, end)
             if break_point > start:
                 end = break_point + 1  # Include the period
 
-        parts.append(text[start:end].strip())
-        start = end - overlap
+        part = text[start:end].strip()
+        if part:
+            parts.append(part)
 
-    return [p for p in parts if p]
+        # Guarantee forward progress: advance at least 1 character
+        next_start = end - overlap
+        if next_start <= start:
+            next_start = start + max(chunk_size // 2, 1)
+        start = next_start
+
+    return parts

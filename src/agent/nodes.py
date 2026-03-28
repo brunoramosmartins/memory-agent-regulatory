@@ -9,6 +9,7 @@ from typing import Any
 
 from src.agent.state import AgentState
 from src.agent.tools import ToolResult, execute_tool
+from src.observability.tracing import span_set_input, span_set_output, trace_span
 
 logger = logging.getLogger(__name__)
 
@@ -17,19 +18,33 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = """\
-You are a regulatory Q&A assistant with access to memory from previous \
-conversations and a set of tools. Answer the user's question using the \
-provided context. If you need to perform a calculation or search for \
-documents, request a tool call.
+Voce e um assistente especialista em documentacao do Pix do Banco Central \
+do Brasil (BCB), incluindo manuais operacionais, especificacoes tecnicas, \
+normas regulatorias e diretrizes de uso da marca.
 
-To call a tool, respond EXACTLY in this JSON format (no other text):
-{{"tool": "<tool_name>", "args": {{<arguments>}}}}
+Seu papel e fornecer respostas precisas e bem fundamentadas baseadas \
+exclusivamente nos trechos de documentos fornecidos no contexto.
 
-Available tools:
-- calculate: Evaluate a math expression. Args: {{"expression": "2 + 2"}}
-- search_documents: Search regulatory documents. Args: {{"query": "your query"}}
+Regras:
+1. Use APENAS informacoes presentes no contexto fornecido. Nao infira, \
+assuma ou adicione conhecimento externo.
+2. Se a resposta nao estiver no contexto, diga claramente: \
+"Esta informacao nao esta disponivel no material fornecido."
+3. Ao responder, SEMPRE cite o documento fonte (ex: "Conforme o Manual de \
+Tempos do Pix..." ou "De acordo com o Manual Operacional do DICT...").
+4. Prefira citacoes diretas do contexto quando a precisao do texto importar.
+5. Mantenha respostas concisas mas completas. Evite redundancia.
+6. Se a pergunta for ambigua ou fora do escopo da documentacao Pix, \
+diga isso explicitamente.
 
-If you do NOT need a tool, respond with your answer in plain text.
+Para chamar uma ferramenta, responda EXATAMENTE neste formato JSON (sem outro texto):
+{{"tool": "<nome_ferramenta>", "args": {{<argumentos>}}}}
+
+Ferramentas disponiveis:
+- calculate: Avaliar expressao matematica. Args: {{"expression": "2 + 2"}}
+- search_documents: Buscar documentos regulatorios. Args: {{"query": "sua busca"}}
+
+Se NAO precisar de ferramenta, responda com sua resposta em texto simples.
 
 {context}"""
 
@@ -88,21 +103,34 @@ def retrieve_memory(state: AgentState, **deps: Any) -> AgentState:
         memory_manager: MemoryManager instance
         embed_fn: callable(str) -> list[float]
     """
-    memory_manager = deps.get("memory_manager")
-    embed_fn = deps.get("embed_fn")
+    with trace_span(
+        "retrieve_memory",
+        attributes={"thread_id": state.thread_id},
+        openinference_span_kind="RETRIEVER",
+    ) as span:
+        memory_manager = deps.get("memory_manager")
+        embed_fn = deps.get("embed_fn")
 
-    if memory_manager is None or embed_fn is None:
-        logger.warning("retrieve_memory: missing dependencies, skipping")
-        return state
+        if span and span.is_recording():
+            span_set_input(span, state.query)
 
-    query_embedding = embed_fn(state.query)
-    state.memory_context = memory_manager.read_context(state.thread_id, query_embedding)
+        if memory_manager is None or embed_fn is None:
+            logger.warning("retrieve_memory: missing dependencies, skipping")
+            return state
 
-    logger.info(
-        "retrieve_memory thread=%s has_context=%s",
-        state.thread_id,
-        state.memory_context is not None,
-    )
+        query_embedding = embed_fn(state.query)
+        state.memory_context = memory_manager.read_context(state.thread_id, query_embedding)
+
+        if span and span.is_recording():
+            has_ctx = state.memory_context is not None
+            span.set_attribute("memory.has_context", has_ctx)
+            span_set_output(span, f"has_context={has_ctx}")
+
+        logger.info(
+            "retrieve_memory thread=%s has_context=%s",
+            state.thread_id,
+            state.memory_context is not None,
+        )
     return state
 
 
@@ -118,58 +146,89 @@ def reason(state: AgentState, **deps: Any) -> AgentState:
         llm_fn: callable(messages: list[dict]) -> str
         build_context_fn: callable(memory_context, ...) -> str
     """
-    llm_fn = deps.get("llm_fn")
-    build_context_fn = deps.get("build_context_fn")
+    with trace_span(
+        "reason",
+        attributes={"iteration": state.iteration_count},
+        openinference_span_kind="CHAIN",
+    ) as span:
+        llm_fn = deps.get("llm_fn")
+        build_context_fn = deps.get("build_context_fn")
 
-    if llm_fn is None:
-        logger.error("reason: llm_fn dependency missing")
-        state.response = "Error: LLM not configured."
-        return state
+        if llm_fn is None:
+            logger.error("reason: llm_fn dependency missing")
+            state.response = "Error: LLM not configured."
+            return state
 
-    # Build context string from memory
-    context_str = ""
-    if build_context_fn and state.memory_context:
-        context_str = build_context_fn(memory_context=state.memory_context)
+        if span and span.is_recording():
+            span_set_input(span, state.query)
 
-    system_msg = SYSTEM_PROMPT.format(context=context_str)
+        # Build context string from memory + retrieval
+        context_str = ""
+        if build_context_fn:
+            with trace_span(
+                "build_context",
+                openinference_span_kind="CHAIN",
+            ) as ctx_span:
+                context_str = build_context_fn(
+                    memory_context=state.memory_context,
+                    query=state.query,
+                )
+                if ctx_span and ctx_span.is_recording():
+                    ctx_span.set_attribute("context.length", len(context_str))
+                    span_set_output(ctx_span, context_str[:500])
 
-    # Assemble messages for the LLM
-    messages: list[dict[str, str]] = [{"role": "system", "content": system_msg}]
+        system_msg = SYSTEM_PROMPT.format(context=context_str)
 
-    # Add conversation history from this turn
-    for msg in state.messages:
-        messages.append(msg)
+        # Assemble messages for the LLM
+        messages: list[dict[str, str]] = [{"role": "system", "content": system_msg}]
 
-    # Add tool results if any
-    for tr in state.tool_results:
-        messages.append(
-            {
-                "role": "system",
-                "content": f"Tool '{tr['name']}' returned: {tr['output']}",
-            }
-        )
+        # Add conversation history from this turn
+        for msg in state.messages:
+            messages.append(msg)
 
-    # Add the current query
-    messages.append({"role": "user", "content": state.query})
+        # Add tool results if any
+        for tr in state.tool_results:
+            messages.append(
+                {
+                    "role": "system",
+                    "content": f"Tool '{tr['name']}' returned: {tr['output']}",
+                }
+            )
 
-    # Call LLM
-    llm_output = llm_fn(messages)
-    state.iteration_count += 1
+        # Add the current query
+        messages.append({"role": "user", "content": state.query})
 
-    # Check if LLM wants to call a tool
-    tool_req = _parse_tool_request(llm_output)
-    if tool_req:
-        state.tool_request = tool_req
-        state.response = ""
-        logger.info(
-            "reason: tool_request=%s iteration=%d",
-            tool_req["tool"],
-            state.iteration_count,
-        )
-    else:
-        state.tool_request = None
-        state.response = llm_output
-        logger.info("reason: final answer iteration=%d", state.iteration_count)
+        # Call LLM
+        with trace_span(
+            "llm_generation",
+            attributes={"llm.message_count": len(messages)},
+            openinference_span_kind="LLM",
+        ) as llm_span:
+            if llm_span and llm_span.is_recording():
+                span_set_input(llm_span, state.query)
+            llm_output = llm_fn(messages)
+            if llm_span and llm_span.is_recording():
+                span_set_output(llm_span, llm_output)
+
+        state.iteration_count += 1
+
+        # Check if LLM wants to call a tool
+        tool_req = _parse_tool_request(llm_output)
+        if tool_req:
+            state.tool_request = tool_req
+            state.response = ""
+            logger.info(
+                "reason: tool_request=%s iteration=%d",
+                tool_req["tool"],
+                state.iteration_count,
+            )
+        else:
+            state.tool_request = None
+            state.response = llm_output
+            logger.info("reason: final answer iteration=%d", state.iteration_count)
+
+        if span and span.is_recording():
+            span_set_output(span, state.response or f"tool_request={tool_req}")
 
     return state
 
@@ -188,9 +247,19 @@ def tool_call(state: AgentState, **deps: Any) -> AgentState:
     name = state.tool_request["tool"]
     args = state.tool_request.get("args", {})
 
-    logger.info("tool_call: executing %s with args=%s", name, args)
+    with trace_span(
+        f"tool_{name}",
+        attributes={"tool.name": name},
+        openinference_span_kind="TOOL",
+    ) as span:
+        if span and span.is_recording():
+            span_set_input(span, json.dumps(args))
 
-    result: ToolResult = execute_tool(name, args)
+        logger.info("tool_call: executing %s with args=%s", name, args)
+        result: ToolResult = execute_tool(name, args)
+
+        if span and span.is_recording():
+            span_set_output(span, result.output or result.error or "")
 
     state.tool_results.append(
         {
@@ -218,28 +287,39 @@ def write_memory(state: AgentState, **deps: Any) -> AgentState:
     Dependencies (passed via deps):
         memory_manager: MemoryManager instance
     """
-    memory_manager = deps.get("memory_manager")
+    with trace_span(
+        "write_memory",
+        attributes={"thread_id": state.thread_id},
+        openinference_span_kind="CHAIN",
+    ) as span:
+        memory_manager = deps.get("memory_manager")
 
-    if memory_manager is None:
-        logger.warning("write_memory: memory_manager not available, skipping")
-        return state
+        if memory_manager is None:
+            logger.warning("write_memory: memory_manager not available, skipping")
+            return state
 
-    # Write user turn
-    memory_manager.write_turn(
-        thread_id=state.thread_id,
-        role="user",
-        content=state.query,
-    )
+        if span and span.is_recording():
+            span_set_input(span, state.query)
 
-    # Write assistant turn
-    if state.response:
+        # Write user turn
         memory_manager.write_turn(
             thread_id=state.thread_id,
-            role="assistant",
-            content=state.response,
+            role="user",
+            content=state.query,
         )
 
-    logger.info("write_memory: persisted turns for thread=%s", state.thread_id)
+        # Write assistant turn
+        if state.response:
+            memory_manager.write_turn(
+                thread_id=state.thread_id,
+                role="assistant",
+                content=state.response,
+            )
+
+        if span and span.is_recording():
+            span_set_output(span, "turns_persisted=2")
+
+        logger.info("write_memory: persisted turns for thread=%s", state.thread_id)
     return state
 
 
